@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photo gallery — Central Saints Youth Football and Cheer game and cheer highlights">
+  <meta name="keywords" content="Central Saints, Youth Football, Cheer, Modesto, Stanislaus, TVYFL">
+  <meta name="msvalidate.01" content="E31318D5FFE5CCACE5E9D68C7A4A8B5A">
+  <title>Gallery — Central Saints Youth Football &amp; Cheer</title>
+  <style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --navy: #08111f; --navy-mid: #0f1e35; --navy-card: #13243d; --navy-light: #1a2f4a;
+  --gold: #d4a800; --gold-bright: #f0c000; --gold-dim: #96780a;
+  --white: #ffffff; --text-primary: #e8edf5; --text-secondary: #8fa3be; --text-muted: #4a6280;
+  --border: rgba(212,168,0,0.15); --border-dim: rgba(255,255,255,0.07); --radius: 12px;
+}
+html { scroll-behavior: smooth; }
+body { font-family: system-ui,-apple-system,'Segoe UI',sans-serif; font-size:16px; line-height:1.65; color:var(--text-primary); background:var(--navy); }
+img { max-width:100%; display:block; } a { color:var(--gold); text-decoration:none; } a:hover { color:var(--gold-bright); }
+ul { list-style:none; } .container { max-width:1080px; margin:0 auto; padding:0 24px; }
+.sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); }
+.btn { display:inline-flex; align-items:center; gap:8px; padding:14px 32px; border-radius:50px; font-size:15px; font-weight:700; cursor:pointer; border:none; text-decoration:none; letter-spacing:.02em; transition:transform .15s,box-shadow .15s,background .15s; white-space:nowrap; }
+.btn:hover { transform:translateY(-2px); text-decoration:none; } .btn:active { transform:translateY(0) scale(.97); }
+.btn-gold { background:linear-gradient(135deg,var(--gold-bright) 0%,var(--gold) 100%); color:var(--navy); box-shadow:0 4px 20px rgba(212,168,0,.35); }
+.btn-gold:hover { background:linear-gradient(135deg,#ffe040 0%,var(--gold-bright) 100%); box-shadow:0 6px 28px rgba(212,168,0,.55); color:var(--navy); }
+.btn-outline { background:transparent; color:var(--text-primary); border:1.5px solid rgba(255,255,255,.25); }
+.btn-outline:hover { border-color:var(--gold); color:var(--gold); }
+.btn-ghost { background:var(--navy-card); color:var(--gold); border:1.5px solid var(--border); }
+.btn-ghost:hover { background:var(--navy-light); border-color:var(--gold); }
+.btn-sm { padding:9px 20px; font-size:13px; }
+.section-label { font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--gold-dim); margin-bottom:10px; }
+.section-heading { font-size:clamp(24px,4vw,34px); font-weight:800; color:var(--text-primary); margin-bottom:6px; line-height:1.2; }
+.section-heading em { font-style:normal; color:var(--gold); }
+.skip-link { position:absolute; top:-100px; left:16px; background:var(--gold); color:var(--navy); padding:8px 16px; border-radius:0 0 8px 8px; font-weight:700; z-index:9999; transition:top .2s; }
+.skip-link:focus { top:0; }
+.topbar { background:var(--navy); border-bottom:1px solid var(--border-dim); padding:8px 0; font-size:13px; color:var(--text-muted); }
+.topbar .container { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px; }
+.topbar a { color:var(--text-secondary); } .topbar a:hover { color:var(--gold); }
+.topbar-social { display:flex; gap:16px; }
+.site-nav { background:rgba(8,17,31,.95); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--border); position:sticky; top:0; z-index:100; }
+.nav-inner { display:flex; align-items:center; justify-content:space-between; padding:14px 24px; max-width:1080px; margin:0 auto; }
+.nav-brand { display:flex; flex-direction:column; text-decoration:none; }
+.nav-brand .brand-name { font-size:20px; font-weight:800; color:var(--white); letter-spacing:-.02em; line-height:1.1; }
+.nav-brand .brand-name span { color:var(--gold); }
+.nav-brand .brand-sub { font-size:11px; color:var(--text-muted); letter-spacing:.06em; text-transform:uppercase; }
+.nav-links { display:flex; gap:2px; align-items:center; }
+.nav-links a { padding:7px 14px; border-radius:8px; font-size:14px; font-weight:500; color:var(--text-secondary); transition:background .12s,color .12s; }
+.nav-links a:hover, .nav-links a.active { background:var(--navy-card); color:var(--text-primary); }
+.nav-links .nav-cta { background:linear-gradient(135deg,var(--gold-bright),var(--gold)); color:var(--navy); font-weight:700; margin-left:10px; border-radius:50px; padding:8px 20px; box-shadow:0 2px 12px rgba(212,168,0,.3); }
+.nav-links .nav-cta:hover { box-shadow:0 4px 20px rgba(212,168,0,.5); color:var(--navy); }
+.nav-toggle { display:none; background:none; border:none; cursor:pointer; flex-direction:column; gap:5px; padding:4px; }
+.nav-toggle span { display:block; width:24px; height:2px; background:var(--text-primary); border-radius:2px; transition:all .2s; }
+@media(max-width:760px){
+  .nav-toggle { display:flex; }
+  .nav-links { display:none; flex-direction:column; align-items:stretch; position:absolute; top:100%; left:0; right:0; background:var(--navy-mid); border-bottom:1px solid var(--border); padding:12px 16px; gap:4px; }
+  .nav-links.open { display:flex; }
+  .nav-links a { padding:11px 14px; }
+  .nav-links .nav-cta { text-align:center; margin-left:0; margin-top:8px; border-radius:8px; }
+}
+.banner-img-wrap { width:100%; overflow:hidden; border-bottom:3px solid var(--gold); line-height:0; }
+.banner-img-wrap img { width:100%; height:auto; display:block; }
+.section { padding:72px 0; } .section-dark { background:var(--navy); } .section-mid { background:var(--navy-mid); }
+.page-hero { padding:56px 0 40px; background:var(--navy); position:relative; overflow:hidden; }
+.page-hero::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 30% 50%,rgba(212,168,0,.05) 0%,transparent 60%); pointer-events:none; }
+.page-hero .container { position:relative; }
+.page-eyebrow { display:inline-flex; align-items:center; gap:8px; background:rgba(212,168,0,.1); border:1px solid rgba(212,168,0,.3); color:var(--gold); font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; padding:5px 14px; border-radius:20px; margin-bottom:16px; }
+.page-title { font-size:clamp(32px,5vw,52px); font-weight:800; line-height:1.1; letter-spacing:-.03em; color:var(--white); margin-bottom:12px; }
+.page-title em { font-style:normal; color:var(--gold); }
+.page-subtitle { font-size:16px; color:var(--text-secondary); max-width:560px; }
+.card { background:var(--navy-card); border:1px solid var(--border-dim); border-radius:var(--radius); padding:28px; transition:border-color .15s; }
+.card:hover { border-color:var(--border); }
+.card h3 { font-size:18px; font-weight:700; color:var(--text-primary); margin-bottom:10px; }
+.card p { font-size:14px; color:var(--text-secondary); line-height:1.7; }
+.contact-item { display:flex; align-items:flex-start; gap:12px; font-size:14px; color:var(--text-secondary); margin-bottom:12px; }
+.contact-item .ci-icon { font-size:18px; flex-shrink:0; opacity:.7; }
+.contact-item a { color:var(--gold); } .contact-item a:hover { color:var(--gold-bright); }
+.contact-form { display:flex; flex-direction:column; gap:14px; }
+.contact-form label { font-size:13px; font-weight:600; color:var(--text-secondary); display:block; margin-bottom:5px; }
+.contact-form input, .contact-form textarea, .contact-form select { width:100%; padding:12px 16px; border:1px solid var(--border-dim); border-radius:8px; font-size:14px; font-family:inherit; color:var(--text-primary); background:var(--navy-card); transition:border-color .12s; }
+.contact-form input::placeholder, .contact-form textarea::placeholder { color:var(--text-muted); }
+.contact-form select option { background:var(--navy-card); }
+.contact-form input:focus, .contact-form textarea:focus { outline:none; border-color:var(--gold); }
+.contact-form textarea { min-height:110px; resize:vertical; }
+.form-status { font-size:13px; padding:10px 14px; border-radius:8px; display:none; }
+.form-status.success { background:rgba(50,180,80,.1); color:#6fdb8a; border:1px solid rgba(50,180,80,.2); display:block; }
+.form-status.error { background:rgba(220,60,60,.1); color:#f08080; border:1px solid rgba(220,60,60,.2); display:block; }
+.site-footer { background:var(--navy-mid); border-top:1px solid var(--border); padding:56px 0 24px; }
+.footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr; gap:40px; margin-bottom:40px; }
+.footer-brand .brand-name { font-size:22px; font-weight:800; color:var(--white); margin-bottom:10px; }
+.footer-brand .brand-name span { color:var(--gold); }
+.footer-brand p { font-size:13px; line-height:1.65; color:var(--text-muted); max-width:260px; }
+.footer-col h4 { font-size:12px; font-weight:700; color:var(--text-primary); margin-bottom:14px; text-transform:uppercase; letter-spacing:.08em; }
+.footer-col ul { display:flex; flex-direction:column; gap:10px; }
+.footer-col ul li a { color:var(--text-muted); font-size:13px; }
+.footer-col ul li a:hover { color:var(--gold); }
+.footer-bottom { border-top:1px solid var(--border-dim); padding-top:20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; font-size:12px; color:var(--text-muted); }
+.footer-bottom a { color:var(--text-muted); } .footer-bottom a:hover { color:var(--gold); }
+@media(max-width:720px){ .footer-grid { grid-template-columns:1fr 1fr; } .footer-brand { grid-column:1/-1; } }
+@media(max-width:480px){ .footer-grid { grid-template-columns:1fr; } }
+@media(prefers-reduced-motion:reduce){ *, *::before, *::after { transition-duration:.01ms !important; } }
+
+
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <div class="topbar"><div class="container"><span>📍 Modesto, CA · Stanislaus County · TVYFL Member</span><div class="topbar-social"><a href="https://www.facebook.com/CSFootball/" target="_blank" rel="noopener">📘 Facebook</a><a href="mailto:president@centralsaints.org">✉️ president@centralsaints.org</a></div></div></div>
+  <header class="site-nav" role="banner"><div class="nav-inner"><a href="index.html" class="nav-brand" aria-label="Central Saints home"><span class="brand-name">Central <span>Saints</span></span><span class="brand-sub">Youth Football &amp; Cheer</span></a><button class="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation"><span></span><span></span><span></span></button><nav id="nav-links" class="nav-links" role="navigation" aria-label="Main navigation"><a href="home.html">Home</a><a href="about.html">About</a><a href="schedule.html">Schedule</a><a href="gallery.html" class="active">Gallery</a><a href="board.html">Board</a><a href="store.html">Apparel</a><a href="https://centralsaints.sportsplus.app/public/4731/registration" target="_blank" rel="noopener" class="nav-cta">⚡ Register now</a></nav></div></header>
+  <main id="main">
+    <div class="banner-img-wrap"><img src="assets/images/2016banner.jpg" alt="Central Saints Youth Football &amp; Cheer" width="1200" height="200"></div>
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-eyebrow">📸 Photos</div>
+        <h1 class="page-title">Game <em>Gallery</em></h1>
+        <p class="page-subtitle">Highlights from our Saints football and cheer seasons.</p>
+      </div>
+    </section>
+
+    <section class="section section-mid">
+      <div class="container">
+        <p class="section-label">2023 Season</p>
+        <h2 class="section-heading">JAMZ &amp; Game <em>highlights</em></h2>
+        <div style="position:relative;margin-top:32px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);" id="carousel">
+          <div style="overflow:hidden;">
+            <div id="slides" style="display:flex;transition:transform .4s ease;">
+              <img src="assets/images/slider/VarsityJamz23Final.png" alt="Varsity JAMZ 2023" style="min-width:100%;max-height:420px;object-fit:contain;background:var(--navy-card);">
+              <img src="assets/images/slider/JrNoviceJamz23Final.png" alt="Jr Novice JAMZ 2023" style="min-width:100%;max-height:420px;object-fit:contain;background:var(--navy-card);">
+              <img src="assets/images/slider/Novice-JVJamz23.png" alt="Novice-JV JAMZ 2023" style="min-width:100%;max-height:420px;object-fit:contain;background:var(--navy-card);">
+              <img src="assets/images/slider/jvpledge23.png" alt="JV Pledge 2023" style="min-width:100%;max-height:420px;object-fit:contain;background:var(--navy-card);">
+              <img src="assets/images/slider/51.png" alt="Saints #51" style="min-width:100%;max-height:420px;object-fit:contain;background:var(--navy-card);">
+              <img src="assets/images/slider/JrNoviceCaptains.png" alt="Jr Novice Captains" style="min-width:100%;max-height:420px;object-fit:contain;background:var(--navy-card);">
+              <img src="assets/images/slider/4RunVarsity.png" alt="Varsity Run" style="min-width:100%;max-height:420px;object-fit:contain;background:var(--navy-card);">
+              <img src="assets/images/slider/34runJV.png" alt="JV Run" style="min-width:100%;max-height:420px;object-fit:contain;background:var(--navy-card);">
+              <img src="assets/images/slider/5RunJV.png" alt="JV Run #5" style="min-width:100%;max-height:420px;object-fit:contain;background:var(--navy-card);">
+              <img src="assets/images/slider/JVCheer.png" alt="JV Cheer" style="min-width:100%;max-height:420px;object-fit:contain;background:var(--navy-card);">
+              <img src="assets/images/slider/8run.png" alt="Run #8" style="min-width:100%;max-height:420px;object-fit:contain;background:var(--navy-card);">
+              <img src="assets/images/slider/run.png" alt="Run" style="min-width:100%;max-height:420px;object-fit:contain;background:var(--navy-card);">
+            </div>
+          </div>
+          <button onclick="slide(-1)" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);background:rgba(8,17,31,.7);border:1px solid var(--border);color:var(--gold);border-radius:50%;width:40px;height:40px;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;">‹</button>
+          <button onclick="slide(1)" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);background:rgba(8,17,31,.7);border:1px solid var(--border);color:var(--gold);border-radius:50%;width:40px;height:40px;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;">›</button>
+          <div id="dots" style="display:flex;justify-content:center;gap:6px;padding:12px;background:var(--navy-card);"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <p class="section-label">Find more photos</p>
+        <h2 class="section-heading">Photo <em>archives</em></h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:32px;">
+          <div class="card">
+            <div style="font-size:28px;margin-bottom:12px;">📘</div>
+            <h3>2019–Present on Facebook</h3>
+            <p style="margin-bottom:16px;">Photos from recent seasons are posted to our Facebook page.</p>
+            <a href="https://www.facebook.com/CSFootball" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Visit Facebook →</a>
+          </div>
+          <div class="card">
+            <div style="font-size:28px;margin-bottom:12px;">📷</div>
+            <h3>2018 &amp; Prior — Shutterfly</h3>
+            <p style="margin-bottom:16px;">Older seasons are preserved on Shutterfly. Free to download — no account required to browse.</p>
+            <a href="docs/ShutterflySites.pdf" target="_blank" class="btn btn-ghost btn-sm">View site list PDF →</a>
+          </div>
+        </div>
+        <p style="margin-top:20px;font-size:13px;color:var(--text-muted);">These photos are volunteer services. All photos are free to download. No profits are made.</p>
+      </div>
+    </section>
+
+    <section class="section section-mid">
+      <div class="container">
+        <p class="section-label">Championships</p>
+        <h2 class="section-heading">Title <em>highlights</em></h2>
+        <div style="display:flex;flex-direction:column;gap:8px;margin-top:24px;">
+          <div style="padding:14px 20px;background:var(--navy-card);border:1px solid var(--border-dim);border-radius:var(--radius);font-size:14px;color:var(--text-secondary);">🏆 <strong style="color:var(--gold);">2023</strong> — Jr. Novice Cheer 5th place · Jr. Varsity Cheer 1st place — TVYFL JAMZ</div>
+          <div style="padding:14px 20px;background:var(--navy-card);border:1px solid var(--border-dim);border-radius:var(--radius);font-size:14px;color:var(--text-secondary);">🏆 <strong style="color:var(--gold);">2022</strong> — JV/Novice Cheer 1st · Jr. Novice 2nd · Varsity 4th — Las Vegas Nationals</div>
+          <div style="padding:14px 20px;background:var(--navy-card);border:1px solid var(--border-dim);border-radius:var(--radius);font-size:14px;color:var(--text-secondary);">🏆 <strong style="color:var(--gold);">2021</strong> — Novice Football Super Bowl Champions (undefeated!)</div>
+          <div style="padding:14px 20px;background:var(--navy-card);border:1px solid var(--border-dim);border-radius:var(--radius);font-size:14px;color:var(--text-secondary);">🏆 <strong style="color:var(--gold);">2019</strong> — JV/Varsity Cheer 1st place JAMZ Nationals Las Vegas · Varsity Football Super Bowl</div>
+          <div style="padding:14px 20px;background:var(--navy-card);border:1px solid var(--border-dim);border-radius:var(--radius);font-size:14px;color:var(--text-secondary);">🏆 <strong style="color:var(--gold);">2018</strong> — Varsity Football Super Bowl 26-0 · Novice Cheer 1st · JV 2nd · Jr. Novice 3rd — JAMZ</div>
+          <div style="padding:14px 20px;background:var(--navy-card);border:1px solid rgba(212,168,0,.4);border-radius:var(--radius);font-size:14px;color:var(--text-secondary);">🏆 <strong style="color:var(--gold);">2017</strong> — <strong style="color:var(--white);">ALL football teams win Super Bowl · ALL cheer teams win Regional Championship</strong> — a first in league history!</div>
+        </div>
+        <p style="margin-top:16px;"><a href="history.html" class="btn btn-ghost btn-sm">Full championship history →</a></p>
+      </div>
+    </section>
+    <script>
+      let cur=0;const slides=document.getElementById('slides'),imgs=slides.querySelectorAll('img'),dotsEl=document.getElementById('dots');
+      imgs.forEach((_,i)=>{const d=document.createElement('button');d.style.cssText='width:8px;height:8px;border-radius:50%;background:'+(i===0?'var(--gold)':'rgba(255,255,255,.3)')+';border:none;cursor:pointer;';d.onclick=()=>goTo(i);dotsEl.appendChild(d);});
+      function goTo(n){cur=n;slides.style.transform='translateX(-'+cur*100+'%)';dotsEl.querySelectorAll('button').forEach((d,i)=>d.style.background=i===cur?'var(--gold)':'rgba(255,255,255,.3)');}
+      function slide(dir){goTo((cur+dir+imgs.length)%imgs.length);}
+    </script>
+
+  </main>
+  <footer class="site-footer" role="contentinfo"><div class="container"><div class="footer-grid"><div class="footer-brand"><div class="brand-name">Central <span>Saints</span></div><p>Youth Football &amp; Cheer — Modesto, CA. Serving Stanislaus County families since 1993. A proud TVYFL member organization.</p></div><div class="footer-col"><h4>Quick links</h4><ul><li><a href="about.html">About us</a></li><li><a href="board.html">Board &amp; contacts</a></li><li><a href="history.html">Our history</a></li><li><a href="sponsors.html">Sponsors</a></li><li><a href="gallery.html">Photo gallery</a></li></ul></div><div class="footer-col"><h4>Season</h4><ul><li><a href="schedule.html">Game schedule</a></li><li><a href="rules.html">Game rules</a></li><li><a href="store.html">Fan apparel</a></li><li><a href="workdetail.html">Work detail</a></li><li><a href="http://www.tvyfl.us" target="_blank" rel="noopener">TVYFL standings</a></li></ul></div></div><div class="footer-bottom"><span>© 2026 Central Saints Youth Football &amp; Cheer · Modesto, CA</span><span><a href="https://www.facebook.com/CSFootball/" target="_blank" rel="noopener">Facebook</a> · <a href="mailto:president@centralsaints.org">Email us</a></span></div></div></footer>
+  <script>const toggle=document.querySelector('.nav-toggle'),navLinks=document.getElementById('nav-links');if(toggle){toggle.addEventListener('click',function(){const open=navLinks.classList.toggle('open');toggle.setAttribute('aria-expanded',open);});}</script>
+</body>
+</html>
