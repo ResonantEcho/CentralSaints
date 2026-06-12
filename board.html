@@ -101,7 +101,12 @@ ul { list-style:none; } .container { max-width:1080px; margin:0 auto; padding:0 
 @media(prefers-reduced-motion:reduce){ *, *::before, *::after { transition-duration:.01ms !important; } }
 
 
-    .board-table { width:100%; border-collapse:collapse; margin-top:20px; }
+    .board-table { width:100%; border-collapse:collapse; margin-top:20px; table-layout:fixed; }
+    .board-table th:nth-child(1), .board-table td:nth-child(1) { width:4%; }
+    .board-table th:nth-child(2), .board-table td:nth-child(2) { width:30%; }
+    .board-table th:nth-child(3), .board-table td:nth-child(3) { width:22%; }
+    .board-table th:nth-child(4), .board-table td:nth-child(4) { width:16%; }
+    .board-table th:nth-child(5), .board-table td:nth-child(5) { width:28%; }
     .board-table th { background:var(--navy-light); color:var(--gold); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; padding:12px 16px; text-align:left; border-bottom:2px solid var(--border); }
     .board-table td { padding:12px 16px; font-size:14px; color:var(--text-secondary); border-bottom:1px solid var(--border-dim); vertical-align:middle; }
     .board-table tr:hover td { background:rgba(212,168,0,.03); }
@@ -131,21 +136,21 @@ ul { list-style:none; } .container { max-width:1080px; margin:0 auto; padding:0 
       <div class="container">
         <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:8px;">
           <div><p class="section-label">Leadership</p><h2 class="section-heading">Board &amp; <em>coaches</em></h2></div>
-          <a href="docs/ByLaws2022.pdf" target="_blank" class="btn btn-ghost btn-sm">📄 By-Laws</a>
+          <a href="forms/ByLaws2022.pdf" target="_blank" class="btn btn-ghost btn-sm">📄 By-Laws</a>
         </div>
 
         <p class="board-section-title">Executive Board</p>
         <div style="overflow-x:auto;"><table class="board-table">
           <thead><tr><th>#</th><th>Position</th><th>Name</th><th>Phone</th><th>Email</th></tr></thead>
           <tbody>
-            <tr><td>1</td><td>President</td><td>Shannon Freehauf</td><td></td><td><a href="mailto:president@centralsaints.org">president@centralsaints.org</a></td></tr>
-            <tr><td>2</td><td>Vice President</td><td>Brandy Figueroa</td><td></td><td><a href="mailto:vp@centralsaints.org">vp@centralsaints.org</a></td></tr>
-            <tr><td>3</td><td>Football League Rep</td><td>Chris Ramirez</td><td></td><td><a href="mailto:leaguerep@centralsaints.org">leaguerep@centralsaints.org</a></td></tr>
-            <tr><td>4</td><td>Secretary</td><td>Stevie Copobianco-Wilson</td><td></td><td><a href="mailto:secretary@centralsaints.org">secretary@centralsaints.org</a></td></tr>
-            <tr><td>5</td><td>Treasurer</td><td>Britanie Hallmon</td><td></td><td><a href="mailto:treasurer@centralsaints.org">treasurer@centralsaints.org</a></td></tr>
-            <tr><td>6</td><td>Secretary of Books</td><td>Felicia Torkelson</td><td></td><td><a href="mailto:books@centralsaints.org">books@centralsaints.org</a></td></tr>
-            <tr><td>7</td><td>Governing Coach</td><td>Shannon Freehauf</td><td></td><td></td></tr>
-            <tr><td>8</td><td>Cheer Coordinator</td><td>Desiraye Tarin</td><td></td><td><a href="mailto:cheer@centralsaints.org">cheer@centralsaints.org</a></td></tr>
+            <tr><td>1</td><td>President</td><td>Shannon Freehauf</td><td>&nbsp;</td><td><a href="mailto:president@centralsaints.org">president@centralsaints.org</a></td></tr>
+            <tr><td>2</td><td>Vice President</td><td>Brandy Figueroa</td><td>&nbsp;</td><td><a href="mailto:vp@centralsaints.org">vp@centralsaints.org</a></td></tr>
+            <tr><td>3</td><td>Football League Rep</td><td>Chris Ramirez</td><td>&nbsp;</td><td><a href="mailto:leaguerep@centralsaints.org">leaguerep@centralsaints.org</a></td></tr>
+            <tr><td>4</td><td>Secretary</td><td>Stevie Copobianco-Wilson</td><td>&nbsp;</td><td><a href="mailto:secretary@centralsaints.org">secretary@centralsaints.org</a></td></tr>
+            <tr><td>5</td><td>Treasurer</td><td>Britanie Hallmon</td><td>&nbsp;</td><td><a href="mailto:treasurer@centralsaints.org">treasurer@centralsaints.org</a></td></tr>
+            <tr><td>6</td><td>Secretary of Books</td><td>Felicia Torkelson</td><td>&nbsp;</td><td><a href="mailto:books@centralsaints.org">books@centralsaints.org</a></td></tr>
+            <tr><td>7</td><td>Governing Coach</td><td>Shannon Freehauf</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>8</td><td>Cheer Coordinator</td><td>Desiraye Tarin</td><td>&nbsp;</td><td><a href="mailto:cheer@centralsaints.org">cheer@centralsaints.org</a></td></tr>
           </tbody>
         </table></div>
 
@@ -153,15 +158,15 @@ ul { list-style:none; } .container { max-width:1080px; margin:0 auto; padding:0 
         <div style="overflow-x:auto;"><table class="board-table">
           <thead><tr><th>#</th><th>Position</th><th>Name</th><th>Phone</th><th>Email</th></tr></thead>
           <tbody>
-            <tr><td>1</td><td>Concessions Coordinator</td><td>May Freehauf</td><td></td><td></td></tr>
-            <tr><td>2</td><td>Fundraiser Coordinator</td><td>Amber Bruns</td><td></td><td><a href="mailto:fundraiser@centralsaints.org">fundraiser@centralsaints.org</a></td></tr>
-            <tr><td>3</td><td>Apparel Coordinator</td><td>Michelle Morfin</td><td></td><td><a href="mailto:info@centralsaints.org">info@centralsaints.org</a></td></tr>
-            <tr><td>4</td><td>Equipment Manager</td><td></td><td></td><td><a href="mailto:info@centralsaints.org">info@centralsaints.org</a></td></tr>
-            <tr><td>5</td><td>Media</td><td>Jennifer Yeszin</td><td></td><td><a href="mailto:webmaster@centralsaints.org">webmaster@centralsaints.org</a></td></tr>
-            <tr><td>6</td><td>Work Detail Coordinator</td><td>Tina Albarran</td><td></td><td><a href="mailto:workdetail@centralsaints.org">workdetail@centralsaints.org</a></td></tr>
-            <tr><td>7</td><td>Member at Large</td><td>Nicole Corpuz</td><td></td><td></td></tr>
-            <tr><td>9</td><td>Member at Large</td><td></td><td></td><td></td></tr>
-            <tr><td>10</td><td>Parent Liaison</td><td></td><td></td><td><a href="mailto:saintsparentliaison@gmail.com">saintsparentliaison@gmail.com</a></td></tr>
+            <tr><td>1</td><td>Concessions Coordinator</td><td>May Freehauf</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>2</td><td>Fundraiser Coordinator</td><td>Amber Bruns</td><td>&nbsp;</td><td><a href="mailto:fundraiser@centralsaints.org">fundraiser@centralsaints.org</a></td></tr>
+            <tr><td>3</td><td>Apparel Coordinator</td><td>Michelle Morfin</td><td>&nbsp;</td><td><a href="mailto:info@centralsaints.org">info@centralsaints.org</a></td></tr>
+            <tr><td>4</td><td>Equipment Manager</td><td>&nbsp;</td><td>&nbsp;</td><td><a href="mailto:info@centralsaints.org">info@centralsaints.org</a></td></tr>
+            <tr><td>5</td><td>Media</td><td>Jennifer Yeszin</td><td>&nbsp;</td><td><a href="mailto:webmaster@centralsaints.org">webmaster@centralsaints.org</a></td></tr>
+            <tr><td>6</td><td>Work Detail Coordinator</td><td>Tina Albarran</td><td>&nbsp;</td><td><a href="mailto:workdetail@centralsaints.org">workdetail@centralsaints.org</a></td></tr>
+            <tr><td>7</td><td>Member at Large</td><td>Nicole Corpuz</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>9</td><td>Member at Large</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>10</td><td>Parent Liaison</td><td>&nbsp;</td><td>&nbsp;</td><td><a href="mailto:saintsparentliaison@gmail.com">saintsparentliaison@gmail.com</a></td></tr>
           </tbody>
         </table></div>
 
@@ -169,8 +174,8 @@ ul { list-style:none; } .container { max-width:1080px; margin:0 auto; padding:0 
         <div style="overflow-x:auto;"><table class="board-table">
           <thead><tr><th>#</th><th>Position</th><th>Name</th><th>Phone</th><th>Email</th></tr></thead>
           <tbody>
-            <tr><td>1</td><td>CCHS Head Coach</td><td>Roger Canepa</td><td>209-404-7860</td><td></td></tr>
-            <tr><td>2</td><td>Saints Governing Coach</td><td>Shannon Freehauf</td><td></td><td></td></tr>
+            <tr><td>1</td><td>CCHS Head Coach</td><td>Roger Canepa</td><td>209-404-7860</td><td>&nbsp;</td></tr>
+            <tr><td>2</td><td>Saints Governing Coach</td><td>Shannon Freehauf</td><td>&nbsp;</td><td>&nbsp;</td></tr>
           </tbody>
         </table></div>
 
@@ -178,10 +183,10 @@ ul { list-style:none; } .container { max-width:1080px; margin:0 auto; padding:0 
         <div style="overflow-x:auto;"><table class="board-table">
           <thead><tr><th>#</th><th>Position</th><th>Name</th><th>Phone</th><th>Email</th></tr></thead>
           <tbody>
-            <tr><td>1</td><td>Varsity Football</td><td></td><td></td><td></td></tr>
-            <tr><td>2</td><td>Jr. Varsity Football</td><td></td><td></td><td></td></tr>
-            <tr><td>3</td><td>Novice Football</td><td></td><td></td><td></td></tr>
-            <tr><td>4</td><td>Jr. Novice Football</td><td></td><td></td><td></td></tr>
+            <tr><td>1</td><td>Varsity Football</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>2</td><td>Jr. Varsity Football</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>3</td><td>Novice Football</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>4</td><td>Jr. Novice Football</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
           </tbody>
         </table></div>
 
@@ -189,12 +194,12 @@ ul { list-style:none; } .container { max-width:1080px; margin:0 auto; padding:0 
         <div style="overflow-x:auto;"><table class="board-table">
           <thead><tr><th>#</th><th>Position</th><th>Name</th><th>Phone</th><th>Email</th></tr></thead>
           <tbody>
-            <tr><td>1</td><td>Cheer Representative</td><td>Des</td><td></td><td><a href="mailto:cheer@centralsaints.org">cheer@centralsaints.org</a></td></tr>
-            <tr><td>2</td><td>Varsity Cheer</td><td></td><td></td><td></td></tr>
-            <tr><td>3</td><td>Jr. Varsity Cheer</td><td></td><td></td><td></td></tr>
-            <tr><td>4</td><td>Novice Cheer</td><td></td><td></td><td></td></tr>
-            <tr><td>5</td><td>Jr. Novice Cheer</td><td></td><td></td><td></td></tr>
-            <tr><td>6</td><td>Cheer Mascots</td><td></td><td></td><td></td></tr>
+            <tr><td>1</td><td>Cheer Representative</td><td>Des</td><td>&nbsp;</td><td><a href="mailto:cheer@centralsaints.org">cheer@centralsaints.org</a></td></tr>
+            <tr><td>2</td><td>Varsity Cheer</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>3</td><td>Jr. Varsity Cheer</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>4</td><td>Novice Cheer</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>5</td><td>Jr. Novice Cheer</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>6</td><td>Cheer Mascots</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
           </tbody>
         </table></div>
 
@@ -202,18 +207,18 @@ ul { list-style:none; } .container { max-width:1080px; margin:0 auto; padding:0 
         <div style="overflow-x:auto;"><table class="board-table">
           <thead><tr><th>#</th><th>Position</th><th>Name</th><th>Phone</th><th>Email</th></tr></thead>
           <tbody>
-            <tr><td>1</td><td>Team Photo / Yearbook</td><td></td><td></td><td></td></tr>
-            <tr><td>2</td><td>Photography – Varsity FB &amp; Cheer</td><td></td><td></td><td></td></tr>
-            <tr><td>3</td><td>Photography – JV FB &amp; Cheer</td><td></td><td></td><td></td></tr>
-            <tr><td>4</td><td>Photography – Novice FB &amp; Cheer</td><td></td><td></td><td></td></tr>
-            <tr><td>5</td><td>Photography – Jr. Novice FB &amp; Cheer</td><td></td><td></td><td></td></tr>
-            <tr><td>6</td><td>Player Safety Coordinator</td><td></td><td></td><td><a href="mailto:saintssafetycoordinator@gmail.com">saintssafetycoordinator@gmail.com</a></td></tr>
-            <tr><td>7</td><td>Web Designer</td><td>Jennifer Yeszin</td><td></td><td><a href="mailto:webmaster@centralsaints.org">webmaster@centralsaints.org</a></td></tr>
-            <tr><td>8</td><td>Homecoming Coordinator</td><td></td><td></td><td></td></tr>
-            <tr><td>9</td><td>8th Grade Send Off Coordinator</td><td></td><td></td><td></td></tr>
-            <tr><td>10</td><td>Yearbook Coordinator</td><td></td><td></td><td></td></tr>
-            <tr><td>11</td><td>Awards Ceremony Coordinator</td><td></td><td></td><td></td></tr>
-            <tr><td>12</td><td>Announcer</td><td></td><td></td><td></td></tr>
+            <tr><td>1</td><td>Team Photo / Yearbook</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>2</td><td>Photography – Varsity FB &amp; Cheer</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>3</td><td>Photography – JV FB &amp; Cheer</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>4</td><td>Photography – Novice FB &amp; Cheer</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>5</td><td>Photography – Jr. Novice FB &amp; Cheer</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>6</td><td>Player Safety Coordinator</td><td>&nbsp;</td><td>&nbsp;</td><td><a href="mailto:saintssafetycoordinator@gmail.com">saintssafetycoordinator@gmail.com</a></td></tr>
+            <tr><td>7</td><td>Web Designer</td><td>Jennifer Yeszin</td><td>&nbsp;</td><td><a href="mailto:webmaster@centralsaints.org">webmaster@centralsaints.org</a></td></tr>
+            <tr><td>8</td><td>Homecoming Coordinator</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>9</td><td>8th Grade Send Off Coordinator</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>10</td><td>Yearbook Coordinator</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>11</td><td>Awards Ceremony Coordinator</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>12</td><td>Announcer</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
           </tbody>
         </table></div>
       </div>
