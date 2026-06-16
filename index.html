@@ -260,32 +260,20 @@
     @media (max-width: 480px) { .quicklinks-grid { grid-template-columns: 1fr; } }
     .quicklink-card {
       position: relative; border-radius: var(--radius);
-      overflow: hidden; height: 220px;
-      display: flex; flex-direction: column; justify-content: flex-end;
+      overflow: hidden;
+      display: flex; flex-direction: column; justify-content: center;
       text-decoration: none; color: var(--white);
+      background: var(--navy-card);
       border: 1px solid var(--border);
-      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s, background 0.2s;
     }
     .quicklink-card:hover {
       transform: translateY(-5px);
       border-color: var(--gold);
+      background: var(--navy-light);
       box-shadow: 0 12px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(212,168,0,0.2);
     }
-    .ql-photo {
-      position: absolute; inset: 0;
-      background-size: cover; background-position: center;
-      transition: transform 0.4s ease;
-    }
-    .quicklink-card:hover .ql-photo { transform: scale(1.06); }
-    .ql-overlay {
-      position: absolute; inset: 0;
-      background: linear-gradient(to top, rgba(8,17,31,0.96) 0%, rgba(8,17,31,0.6) 45%, rgba(8,17,31,0.2) 100%);
-      transition: background 0.2s;
-    }
-    .quicklink-card:hover .ql-overlay {
-      background: linear-gradient(to top, rgba(8,17,31,0.98) 0%, rgba(8,17,31,0.7) 50%, rgba(8,17,31,0.25) 100%);
-    }
-    .ql-content { position: relative; z-index: 1; padding: 20px; }
+    .ql-content { position: relative; z-index: 1; padding: 24px; }
     .ql-tag {
       display: inline-block; background: var(--gold); color: var(--navy);
       font-size: 10px; font-weight: 800; letter-spacing: 0.08em;
@@ -589,8 +577,6 @@
         <div class="quicklinks-grid">
 
           <a href="https://centralsaints.sportsplus.app/public/4731/registration" class="quicklink-card" target="_blank" rel="noopener">
-            <div class="ql-photo" style="background-image:url('https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=600&q=80')"></div>
-            <div class="ql-overlay"></div>
             <div class="ql-content">
               <span class="ql-tag">2026 Season</span>
               <h3>Register online</h3>
@@ -600,8 +586,6 @@
           </a>
 
           <a href="forms/FootballCheer_Registration_Packet_2026.pdf" class="quicklink-card" target="_blank">
-            <div class="ql-photo" style="background-image:url('https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=600&q=80')"></div>
-            <div class="ql-overlay"></div>
             <div class="ql-content">
               <span class="ql-tag">Download</span>
               <h3>Registration packet</h3>
@@ -611,8 +595,6 @@
           </a>
 
           <a href="forms/ImportantDates.pdf" class="quicklink-card" target="_blank">
-            <div class="ql-photo" style="background-image:url('https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=600&q=80')"></div>
-            <div class="ql-overlay"></div>
             <div class="ql-content">
               <span class="ql-tag">Key dates</span>
               <h3>Important dates</h3>
@@ -622,8 +604,6 @@
           </a>
 
           <a href="schedule.html" class="quicklink-card">
-            <div class="ql-photo" style="background-image:url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&q=80')"></div>
-            <div class="ql-overlay"></div>
             <div class="ql-content">
               <span class="ql-tag">Games</span>
               <h3>Game schedule</h3>
@@ -633,8 +613,6 @@
           </a>
 
           <a href="store.html" class="quicklink-card">
-            <div class="ql-photo" style="background-image:url('https://images.unsplash.com/photo-1610824352934-c10d87b700cc?w=600&q=80')"></div>
-            <div class="ql-overlay"></div>
             <div class="ql-content">
               <span class="ql-tag">Gear</span>
               <h3>Fan apparel</h3>
@@ -644,8 +622,6 @@
           </a>
 
           <a href="http://www.tvyfl.us" class="quicklink-card" target="_blank" rel="noopener">
-            <div class="ql-photo" style="background-image:url('https://images.unsplash.com/photo-1484482340112-e1e2682b4856?w=600&q=80')"></div>
-            <div class="ql-overlay"></div>
             <div class="ql-content">
               <span class="ql-tag">League</span>
               <h3>TVYFL standings</h3>
