@@ -225,6 +225,23 @@
     .cta-strip p  { color: var(--text-secondary); }
     .cta-btns { display: flex; gap: 12px; flex-wrap: wrap; flex-shrink: 0; }
 
+    /* Schedule graphic */
+    .schedule-graphic {
+      max-width: 560px; margin: 0 auto 48px;
+      border-radius: var(--radius); overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .schedule-graphic img { width: 100%; height: auto; display: block; }
+
+    /* Home / Away badge */
+    .badge {
+      display: inline-block; font-size: 10px; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 2px 8px; border-radius: 20px; margin-top: 4px;
+    }
+    .badge-home { background: rgba(212,168,0,0.15); color: var(--gold); }
+    .badge-away { background: rgba(143,163,190,0.12); color: var(--text-secondary); }
+
     /* Mobile table scroll */
     @media (max-width: 640px) {
       .sched-row { grid-template-columns: 90px 1fr; }
@@ -294,7 +311,156 @@
           <div class="legend-item"><div class="legend-dot dot-gold"></div> Key season milestone</div>
         </div>
 
-        <!-- Registration -->
+        <!-- 2026 Game Schedule graphic -->
+        <div class="schedule-graphic">
+          <img src="images/2026-schedule.png"
+               alt="Central Saints 2026 Season Football Schedule — 10 games from August 15 through October 24"
+               width="1254" height="1254" loading="lazy">
+        </div>
+
+        <!-- Game Schedule -->
+        <div class="phase-block">
+          <div class="phase-title">
+            <span class="phase-icon" aria-hidden="true">🏈</span> 2026 Game Schedule
+          </div>
+          <div class="schedule-list">
+
+            <div class="sched-row highlight">
+              <div class="sched-date">
+                <div class="date-main">Aug 15, 2026</div>
+                <div class="date-sub">Saturday</div>
+              </div>
+              <div class="sched-event">
+                <div class="event-name">Game 1 · Turlock Eagles</div>
+                <div class="event-note note-gold">🏈 Season opener!</div>
+                <span class="badge badge-home">Home</span>
+              </div>
+              <div class="sched-place">CCHS</div>
+              <div class="sched-time">1,3,5,7*</div>
+            </div>
+
+            <div class="sched-row">
+              <div class="sched-date">
+                <div class="date-main">Aug 22, 2026</div>
+                <div class="date-sub">Saturday</div>
+              </div>
+              <div class="sched-event">
+                <div class="event-name">Game 2 · Eagles</div>
+                <div class="event-note note-muted">Divisions: 9, 11, 1, 3</div>
+                <span class="badge badge-away">Away</span>
+              </div>
+              <div class="sched-place">Gregori HS</div>
+              <div class="sched-time">9,11,1,3</div>
+            </div>
+
+            <div class="sched-row">
+              <div class="sched-date">
+                <div class="date-main">Aug 29, 2026</div>
+                <div class="date-sub">Saturday</div>
+              </div>
+              <div class="sched-event">
+                <div class="event-name">Game 3 · BV Sabres</div>
+                <span class="badge badge-away">Away</span>
+              </div>
+              <div class="sched-place">Big Valley HS</div>
+              <div class="sched-time">1,3,5,7*</div>
+            </div>
+
+            <div class="sched-row">
+              <div class="sched-date">
+                <div class="date-main">Sep 12, 2026</div>
+                <div class="date-sub">Saturday</div>
+              </div>
+              <div class="sched-event">
+                <div class="event-name">Game 4 · Ripon Christian</div>
+                <span class="badge badge-away">Away</span>
+              </div>
+              <div class="sched-place">Ripon Christian HS</div>
+              <div class="sched-time">1,3,5,7*</div>
+            </div>
+
+            <div class="sched-row">
+              <div class="sched-date">
+                <div class="date-main">Sep 19, 2026</div>
+                <div class="date-sub">Saturday</div>
+              </div>
+              <div class="sched-event">
+                <div class="event-name">Game 5 · Kingsmen</div>
+                <span class="badge badge-away">Away</span>
+              </div>
+              <div class="sched-place">Gregori HS</div>
+              <div class="sched-time">1,3,5,7*</div>
+            </div>
+
+            <div class="sched-row">
+              <div class="sched-date">
+                <div class="date-main">Sep 26, 2026</div>
+                <div class="date-sub">Saturday</div>
+              </div>
+              <div class="sched-event">
+                <div class="event-name">Game 6 · CCHS</div>
+                <span class="badge badge-home">Home</span>
+              </div>
+              <div class="sched-place">CCHS</div>
+              <div class="sched-time">1,3,5,7*</div>
+            </div>
+
+            <div class="sched-row">
+              <div class="sched-date">
+                <div class="date-main">Oct 3, 2026</div>
+                <div class="date-sub">Saturday</div>
+              </div>
+              <div class="sched-event">
+                <div class="event-name">Game 7 · Raiders</div>
+                <span class="badge badge-home">Home</span>
+              </div>
+              <div class="sched-place">CCHS</div>
+              <div class="sched-time">1,3,5,7*</div>
+            </div>
+
+            <div class="sched-row">
+              <div class="sched-date">
+                <div class="date-main">Oct 10, 2026</div>
+                <div class="date-sub">Saturday</div>
+              </div>
+              <div class="sched-event">
+                <div class="event-name">Game 8 · Redhawks</div>
+                <span class="badge badge-home">Home</span>
+              </div>
+              <div class="sched-place">CCHS</div>
+              <div class="sched-time">1,3,5,7*</div>
+            </div>
+
+            <div class="sched-row">
+              <div class="sched-date">
+                <div class="date-main">Oct 17, 2026</div>
+                <div class="date-sub">Saturday</div>
+              </div>
+              <div class="sched-event">
+                <div class="event-name">Game 9 · Warriors</div>
+                <span class="badge badge-away">Away</span>
+              </div>
+              <div class="sched-place">Orestimba HS</div>
+              <div class="sched-time">1,3,5,7*</div>
+            </div>
+
+            <div class="sched-row highlight">
+              <div class="sched-date">
+                <div class="date-main">Oct 24, 2026</div>
+                <div class="date-sub">Saturday</div>
+              </div>
+              <div class="sched-event">
+                <div class="event-name">Game 10 · Modesto Rams</div>
+                <div class="event-note note-gold">🏁 Regular season finale</div>
+                <span class="badge badge-home">Home</span>
+              </div>
+              <div class="sched-place">CCHS</div>
+              <div class="sched-time">1,3,5,7*</div>
+            </div>
+
+          </div>
+          <p style="font-size:12px; color:var(--text-muted); margin-top:14px;">* Game times 1, 3, 5, 7 unless noted otherwise. Schedule subject to change.</p>
+        </div>
         <div class="phase-block">
           <div class="phase-title">
             <span class="phase-icon" aria-hidden="true">📋</span> Registration
@@ -480,7 +646,7 @@
         <!-- Season -->
         <div class="phase-block">
           <div class="phase-title">
-            <span class="phase-icon" aria-hidden="true">🏈</span> Season
+            <span class="phase-icon" aria-hidden="true">📅</span> Season Events
           </div>
           <div class="schedule-list">
 
@@ -545,19 +711,6 @@
               <div class="sched-event">
                 <div class="event-name">Team Pictures</div>
                 <div class="event-note note-muted">Aug 10: Cheer · Aug 17: Football Varsity &amp; Novice · Aug 24: Football JV &amp; Jr. Novice</div>
-              </div>
-              <div class="sched-place">TBD</div>
-              <div class="sched-time">TBD</div>
-            </div>
-
-            <div class="sched-row highlight">
-              <div class="sched-date">
-                <div class="date-main">Aug 15, 2026</div>
-                <div class="date-sub">Saturday</div>
-              </div>
-              <div class="sched-event">
-                <div class="event-name">1st Game of the Season</div>
-                <div class="event-note note-gold">🏆 Game day!</div>
               </div>
               <div class="sched-place">TBD</div>
               <div class="sched-time">TBD</div>
