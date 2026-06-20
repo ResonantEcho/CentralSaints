@@ -622,7 +622,7 @@
             </div>
           </a>
 
-          <a href="http://www.tvyfl.us" class="quicklink-card" target="_blank" rel="noopener">
+          <a href="https://www.tvyfl.us" class="quicklink-card" target="_blank" rel="noopener">
             <div class="ql-content">
               <span class="ql-tag">League</span>
               <h3>TVYFL standings</h3>
@@ -816,7 +816,7 @@
             </ul>
             <div class="contact-social">
               <a href="https://www.facebook.com/CSFootball/" class="social-btn" target="_blank" rel="noopener">📘 Facebook</a>
-              <a href="http://www.tvyfl.us" class="social-btn" target="_blank" rel="noopener">🏆 TVYFL</a>
+              <a href="https://www.tvyfl.us" class="social-btn" target="_blank" rel="noopener">🏆 TVYFL</a>
             </div>
           </div>
           <div>
@@ -880,7 +880,7 @@
             <li><a href="rules.html">Game rules</a></li>
             <li><a href="store.html">Fan apparel</a></li>
             <li><a href="workdetail.html">Work detail</a></li>
-            <li><a href="http://www.tvyfl.us" target="_blank" rel="noopener">TVYFL standings</a></li>
+            <li><a href="https://www.tvyfl.us" target="_blank" rel="noopener">TVYFL standings</a></li>
           </ul>
         </div>
       </div>
@@ -929,7 +929,7 @@
         status.textContent = 'Please fill in all required fields.';
         return;
       }
-      var body = 'Name: ' + name + '%0D%0AEmail: ' + email + '%0D%0A%0D%0A' + encodeURIComponent(message);
+      var body = encodeURIComponent('Name: ' + name + '\r\nEmail: ' + email + '\r\n\r\n' + message);
       var subj = encodeURIComponent((subject || 'Website enquiry') + ' — from ' + name);
       window.location.href = 'mailto:president@centralsaints.org?subject=' + subj + '&body=' + body;
       status.className = 'form-status success';
