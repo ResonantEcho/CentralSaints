@@ -11,6 +11,10 @@ for page in "$root"/*.html; do
   cp "$page" "$dist/"
 done
 
+if [ -f "$root/.htaccess" ]; then
+  cp "$root/.htaccess" "$dist/"
+fi
+
 for directory in assets docs forms images; do
   if [ -d "$root/$directory" ]; then
     cp -R "$root/$directory" "$dist/$directory"
